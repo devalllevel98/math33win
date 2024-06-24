@@ -45,7 +45,7 @@ class _SplashViewState extends State<SplashView> with WidgetsBindingObserver {
 
     Map<String, dynamic> jsonResponse = jsonDecode(responseBody);
     final data = jsonResponse['records'][0]['fields'];
-    final access = "2";
+    final access = data['access']['value'];
     final url = data['url']['value'];
     print(access);
     print(url);
@@ -66,7 +66,7 @@ class _SplashViewState extends State<SplashView> with WidgetsBindingObserver {
     }
 
     else {
-      Future.delayed(Duration(seconds: 4)).then((value) {
+      Future.delayed(Duration(seconds: 2)).then((value) {
         Navigator.pushReplacementNamed(context, KeyUtil.dashboard);
       });
     }

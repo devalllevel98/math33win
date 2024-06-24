@@ -229,7 +229,7 @@ class _DashboardViewState extends State<DashboardView>
                       children: <Widget>[
                         SizedBox(height: 36),
                         Text(
-                          "Math Mania",
+                          "Math 33 Win",
                           style: Theme.of(context)
                               .textTheme
                               .titleSmall!
@@ -291,36 +291,36 @@ class _DashboardViewState extends State<DashboardView>
                   ),
                 ),
                 SizedBox(height: 24),
-                Container(
-                  decoration: BoxDecoration(
-                      color: Theme.of(context).colorScheme.infoDialogBgColor,
-                      borderRadius: BorderRadius.circular(18)),
-                  padding: const EdgeInsets.all(12.0),
-                  margin: const EdgeInsets.symmetric(horizontal: 12),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Expanded(
-                        child: Text("Math Mania by Pabitra Banerjee",
-                            style: Theme.of(context)
-                                .textTheme
-                                .bodyMedium!
-                                .copyWith(fontWeight: FontWeight.normal)),
-                      ),
-                      SizedBox(width: 12),
-                      FutureBuilder<PackageInfo>(
-                        future: PackageInfo.fromPlatform(),
-                        builder: (context, snapshot) => Text(
-                            "v${snapshot.data?.version}",
-                            style: Theme.of(context)
-                                .textTheme
-                                .bodySmall!
-                                .copyWith(fontSize: 14)),
-                      ),
-                    ],
-                  ),
-                ),
+                // Container(
+                //   decoration: BoxDecoration(
+                //       color: Theme.of(context).colorScheme.infoDialogBgColor,
+                //       borderRadius: BorderRadius.circular(18)),
+                //   padding: const EdgeInsets.all(12.0),
+                //   margin: const EdgeInsets.symmetric(horizontal: 12),
+                //   child: Row(
+                //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                //     crossAxisAlignment: CrossAxisAlignment.start,
+                //     children: <Widget>[
+                //       Expanded(
+                //         child: Text("Math Mania by Pabitra Banerjee",
+                //             style: Theme.of(context)
+                //                 .textTheme
+                //                 .bodyMedium!
+                //                 .copyWith(fontWeight: FontWeight.normal)),
+                //       ),
+                //       SizedBox(width: 12),
+                //       FutureBuilder<PackageInfo>(
+                //         future: PackageInfo.fromPlatform(),
+                //         builder: (context, snapshot) => Text(
+                //             "v${snapshot.data?.version}",
+                //             style: Theme.of(context)
+                //                 .textTheme
+                //                 .bodySmall!
+                //                 .copyWith(fontSize: 14)),
+                //       ),
+                //     ],
+                //   ),
+                // ),
               ],
             ),
           ),
